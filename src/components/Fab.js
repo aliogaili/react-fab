@@ -41,7 +41,7 @@ export default class Fab extends Component {
               onClose: this.handleClose,
             };
 
-            if (element && element.type === FabButton) {
+            if (element && element.type ===  React.createElement(FabButton).type) {
               options.onClick = this.handleToggle;
             }
 
